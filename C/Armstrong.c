@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-
+/*hey this is a comment*/
 int main()
 {
     printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");
