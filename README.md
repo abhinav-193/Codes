@@ -1,3 +1,4 @@
+master
 # Readme
 
 This github repo provides you the much-needed basics about the following three coding languages : C++, C, Python
@@ -15,3 +16,6 @@ Right from looping structures to very advanced opencv, this repo tries to cover 
 - [Run C programs](https://www.javatpoint.com/how-to-install-c) 
 - [Run Python programs](https://www.python.org/downloads/)
 
+# Codes
+Contains code of Python,c and c++
+master
