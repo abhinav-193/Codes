@@ -2,7 +2,7 @@ master
 # Readme
 
 This github repo provides you the much-needed basics about the following three coding languages : C++, C, Python
-Right from looping structures to very advanced opencv, this repo tries to cover almost every coding technique inorder to help the beignners learn and enjoy coding in the above mentioned language.
+Right from looping structures to very advanced opencv, this repo tries to cover almost every coding technique inorder to help the beignners learn and enjoy coding in the above mentioned language.Thank you.
 
 ## Installation
 
