@@ -4,6 +4,9 @@ master
 This github repo provides you the much-needed basics about the following three coding languages : C++, C, Python
 Right from looping structures to very advanced opencv, this repo tries to cover almost every coding technique inorder to help the beignners learn and enjoy coding in the above mentioned language.Thank you.
 
+
+## After conmtributing your code please add yourself to the list as: - #comment[Abhinav Mukherjee](https://github.com/abhinav-193 "View Profile")
+
 ## Installation
 
 - [Install C++](https://www.cs.odu.edu/~zeil/cs250PreTest/latest/Public/installingACompiler/)
@@ -19,3 +22,6 @@ Right from looping structures to very advanced opencv, this repo tries to cover 
 # Codes
 Contains code of Python,c and c++
 master
+
+Contributors:
+
