@@ -12,16 +12,13 @@ void countSort(vector<int> &arr)
     vector<int> count(range), output(arr.size());
     for (int i = 0; i < arr.size(); i++)
         count[arr[i] - min]++;
-
     for (int i = 1; i < count.size(); i++)
         count[i] += count[i - 1];
-
     for (int i = arr.size() - 1; i >= 0; i--)
     {
         output[count[arr[i] - min] - 1] = arr[i];
         count[arr[i] - min]--;
     }
-
     for (int i = 0; i < arr.size(); i++)
         arr[i] = output[i];
 }
@@ -32,7 +29,6 @@ void printArray(vector<int> &arr)
         cout << arr[i] << " ";
     cout << "\n";
 }
-
 int main()
 {
     vector<int> arr = {-8, -12, 0, 4, 8, 4, -1, 10};
