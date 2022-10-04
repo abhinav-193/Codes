@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Before attribute</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap" rel="stylesheet">
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar::before{
+            content:"";
+            background-image: url("img_prac/background_wall.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            width:100%;
+            height:100%;
+            z-index:-1;
+
+            /* opacity:.5; */
+        
+        }
+        .navbar ul{
+            height:30px;
+            padding:39px 5px;
+        }
+        .navbar ul{
+            display:flex;
+            flex-direction: row;
+            /* background-color: black; */
+            gap:50px;
+            
+            
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color:white;
+            font-size: 22px;
+            font-family: 'Twinkle Star', cursive;
+        }
+        .container{
+            /* border:2px solid red; */
+            height:400px;
+            text-align: center;
+            /* justify-content:  center; */
+        }
+        .heading{
+            color:white;
+            font-size: 70px;
+            font-family: 'Twinkle Star', cursive;
+            /* background-color: black; */
+        }
+        .heading::before{
+            content:"";
+            /* background-image: url("img_prac/background.jpg"); */
+            background-repeat: no-repeat;
+            background-position: center;
+            position:absolute;
+            width:100vw;
+            height:100vh;
+            z-index:-1;
+        }
+        .paragraph{
+            color:white;
+            font-size: 30px;
+            font-family: 'Twinkle Star', cursive;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <div class="container">
+        <h1 class="heading">Welcome to the coding world</h1>
+        <br>
+        <br>
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ea qui a deserunt laborum provident cumque inventore facilis, dicta sequi sapiente corporis ad, dolor aspernatur illo deleniti assumenda cupiditate numquam voluptatem. Beatae unde ipsum reiciendis delectus voluptatibus consectetur exercitationem. Excepturi!</p>
+    </div>
+    
+</body>
+</html>

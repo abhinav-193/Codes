@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Variables</title>
+     <style>
+         /* if u want to create a local variable create it inside the styling of object */
+         /* if you want to create a variable that can be accesedd by evry styling part, create it in :root area */
+         :root{
+             /* this can be accesed by each object styling content */
+             --background-color:aqua;
+
+         }
+         .container{
+             display: flex;
+             flex-direction: row;
+            gap:10px;
+         }
+         .box{
+
+             /* this variable can be accesed only within this container */
+             --font-color:red;
+             width:200px;
+             height: 200px;
+             border: 2px solid black;
+             background-color: var(--background-color);
+             color:var(--font-color);
+             font-size: 40px;
+         }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+    </div>
+</body>
+</html>

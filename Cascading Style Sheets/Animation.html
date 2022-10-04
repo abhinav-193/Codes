@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and Animation</title>
+</head>
+<style>
+    .container{
+        background-color: red;
+        width:200px;
+        animation-name: harshit;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        /* animation-delay: 2s; */
+        animation-direction: normal ;
+    }
+    h1{
+        color:white;
+   
+    }
+    @keyframes harshit {
+        from{
+            position: relative;
+            width:0px;
+            left:0;
+        }
+        to{
+            position: relative;
+            width:400px;
+            left: 100px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+    </div>
+</body>
+</html> 

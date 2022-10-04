@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+</head>
+<style>
+    .boxes{
+        display:flex;
+        /* flex-direction: column */
+        flex-direction: column-reverse;
+        /* For wrappping the screen contents when scrreen size is decreased */
+        flex-wrap: wrap;
+        /* to make elements center */
+        justify-content: center;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .box1{
+        
+        height: 113px;
+        width:137px;
+        background-color: red;
+        border: 2px solid yellow;
+    }
+    .box2{
+        
+        height: 113px;
+        width:137px;
+        background-color: pink;
+        border: 2px solid black;
+    }
+    .box3{
+        
+        height: 113px;
+        width:137px;
+        background-color: greenyellow;
+        border: 2px solid blue;
+    }
+    .box4{
+        
+        height: 113px;
+        width:137px;
+        background-color: aquamarine;
+        border: 2px solid darkgreen;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="boxes">
+            <div class="box1">
+                This is box 1
+            </div>
+            <div class="box2">
+                This is box 2
+            </div>
+            <div class="box3">
+                This is box 3
+            </div>
+            <div class="box4">
+                This is box 4
+            </div>
+        </div>
+    </div>
+</body>
+</html>
