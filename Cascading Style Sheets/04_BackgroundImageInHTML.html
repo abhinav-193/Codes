@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Image</title>
+    <style>
+      #container {
+        border: solid royalblue;
+        /* height and width of container */
+        width: 1234px;
+        height: 744px;
+
+        /* Size of background defined among : cover,contain,auto,width,height */
+        background-size: contain;
+
+        /* For controlling repetion of image*/
+        background-repeat: no-repeat;
+
+        /* For controlling movement of image */
+        background-attachment: local;
+
+        /* Background iamge 1 */
+        background-image: url("./img_prac/background.jpg");
+        /* Background iamge 2 */
+        /* Second image will take over first image */
+        background-image: url("./img_prac/background.jpg");
+        /* See more options of background  repea in MDN reference */
+
+        background-position-x: center;
+
+        /* For shorthand notation i.e. in single line  */
+        /* background:yellow url("kiaraadvani.jfif") no-repeat scroll center; */
+      }
+      body {
+        border: solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>This is image</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ut
+        quia adipisci quisquam minus sed cupiditate natus voluptatum quae, neque
+        cum, ab optio amet eius, maxime facere id unde libero.
+      </p>
+    </div>
+  </body>
+</html>

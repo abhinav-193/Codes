@@ -1,0 +1,56 @@
+ *{
+            margin: 0;
+            padding: 0;   
+        }
+        .navbar{
+            background-color:black;
+            
+            height:45px;
+            /* color:white; */
+
+        }
+        .navbar ul li{
+            display: inline-block;
+            padding :2px 8px;
+        }
+        .navbar ul li a{
+          text-decoration: none;
+          color:white;
+        }
+        
+        .left{
+            background-color: red;
+            color :white;
+            display:inline-block;
+            width:50%;
+            height: 90vh;
+            font-family: 'Baloo Tamma 2', cursive;
+            
+            
+              /* border:800px;
+          border-color: white; */
+          
+        }
+        .right{
+            background-color: green;
+            color: white;
+            width:50%;
+           display: inline-block;
+            height: 90vh;
+            font-family: 'Baloo Tamma 2', cursive;
+            /* font-size: 30px; */
+/* border:2px;
+border-color: white; */
+            
+        }
+        .footer{
+            background-color: black;
+            
+            color: white;
+            height:52px;
+            padding:12px;
+        }
+     .center{
+         text-align:center;
+     }
+        

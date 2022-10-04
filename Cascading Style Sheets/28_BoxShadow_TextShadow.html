@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text shadow</title>
+    <style>
+        /* aligning boxes inside the container using flexbox */
+        .container{
+            display:flex;
+            flex-direction: column;
+            align-content: center;
+            gap:10px;
+        }
+        /* editing boxes */
+        .box{
+            height: 200px;
+            width:200px;
+
+            text-align: center;
+            font-size: 80px;
+            color:rgb(182, 59, 59);
+            /* applying text shadow */
+            /* syntax: text-shadow: right bottom color */
+             /* we can give negitive values if we want to apply shadow in opposite direction */
+            text-shadow: 3px 4px rgb(13, 134, 150);
+           
+            border: 2px solid black;
+
+            /* applying shadow to box */
+            /* syntax:for OFFSET-for outside shadow
+            box-shadow: offset-x offset-y blur-radius spread-radius color  */
+            /* we can give negitive values if we want to apply shadow in opposite direction */
+            box-shadow: 5px 7px 13px 2px black;
+        
+            /* multiple box shadows can be applied and are seperated by commas */
+
+            /* syntax: for INSET-for inside shadow 
+            box-shadow:inset 2px 4px aqua*/
+            box-shadow: inset 5px 7px 13px 2px aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+</body>
+</html>
