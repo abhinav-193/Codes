@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(orange,white);
+}
+.container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+    text-align: center;
+}
+.Stopwatch{
+    font-size: 3rem;
+    font-family: cursive;
+}
+span{
+    font-size: 2rem;
+}
+button{
+    height:3rem;
+    margin:1em;
+    width:5rem;
+    cursor: pointer;
+    background-color: black;
+    color:white;
+    font-family: cursive;
+}
