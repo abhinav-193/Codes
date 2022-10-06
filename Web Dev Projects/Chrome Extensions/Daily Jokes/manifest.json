@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Daily Joke",
+  "description": "Randomly delivers either one or two-part jokes, this helps in qucik relaxation and brings a smile on your face",
+  "version": "0.1",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon48.png",
+    "default_popup": "popup.html"
+  }
+}
