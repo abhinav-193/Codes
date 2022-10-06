@@ -1,0 +1,27 @@
+body{
+    background-color: #253C78;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 3%;
+}
+.title{
+    color: gainsboro;
+}
+.sec{
+    width: 250px;
+    height: fit-content;
+}
+.jk-btn{
+    background-color: white ;
+    color: #253C78;
+    border: solid white 3px;
+    border-radius: 3px;
+    font-size:larger;
+    padding: 5px 15px;
+    align-self: flex-end;
+    cursor: pointer;
+}
