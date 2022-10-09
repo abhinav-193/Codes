@@ -1,0 +1,73 @@
+<!-- Craete a same layout as practice set 6 using flex box -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        padding:24px;
+    }
+    li{
+        list-style: none;
+        display:inline;
+        padding:10px;
+    }
+    header{
+        background-color: black;
+        color:white;
+        height:66px;
+    }
+    .left{
+        height: 80vh;
+        width:40vw;
+        
+        background-color: aqua;
+        color:black;
+
+    }
+    .right{
+        height:80vh;
+        width: 40vw;
+       
+        background-color: greenyellow;
+        color: black;
+
+    }
+    /* for using flex box:we eill use it on container i.e.  parent */
+    .container{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""></a>Home</li>
+                <li><a href=""></a>About Us</li>
+                <li><a href=""></a>Contact US</li>
+                <li><a href=""></a>Downloads</li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <div class="container">
+        <div class="left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptate harum blanditiis distinctio, enim rem molestias, odio itaque quos, animi obcaecati optio similique nesciunt? Omnis illo quibusdam error eligendi quis?
+        </div>
+        <div class="right">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dolorum ipsa consequuntur assumenda, quae molestiae quaerat. Commodi cum rerum veritatis odit doloremque! Sequi unde rem quod quo autem pariatur ab amet qui blanditiis. Amet quasi saepe libero aliquid, rerum optio!
+        </div>
+   </div>
+</body>
+</html>

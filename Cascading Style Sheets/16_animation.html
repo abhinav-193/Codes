@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            /* syntax
+            animation: (name of keyframe) (time lapse) () () (iteration count) () () */
+            animation: bouncing 0.5s ease 0s infinite alternate both;
+            /* designing the oval shaped LOADING Box */
+            background: darkblue;
+            border-radius: 50%;
+            display: inline-block;
+            color:white;
+            cursor:pointer;
+            font-size:0.75rem;
+            font-weight:300;
+            letter-spacing:0.2em;
+            padding: 1em 2em 1.1em;
+            /* padding :1px 2px 1.1px; */
+            position:relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            /* vertical-align: top; */
+            margin-top: 100px;
+        }
+        @keyframes bouncing{
+            0%{
+                bottom:0;
+                /* last property in rgba is for transparency */
+                box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+            }
+            50%{
+                bottom:1000px;
+            }
+            100%{
+                bottom:50px;
+                box-shadow: 0 50px 50px rgba(0,0,0,0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a>Loading</a>
+</body>
+</html>

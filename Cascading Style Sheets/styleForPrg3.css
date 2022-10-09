@@ -1,0 +1,40 @@
+h1{
+    color: darkred;
+    background-color: darkseagreen;
+}
+
+
+div{
+    color:blue;
+    background-color : white;
+}
+
+
+/* For selecting a class */
+.GREEN{
+    background-color: green;
+    color: white;
+    border: 2px solid orange;
+}
+
+
+
+/* To slect an id */
+#yellow{
+    /* emeet abbervation is bg or bc for background */
+    background-color: rgb(52, 117, 103);
+    height : 344px;
+    color: black;
+    border : 2px solid greenyellow;
+}
+
+
+/* To universally select all the elements */
+/* To give margins to text margin and padding  */
+*{
+    /* Emmet abberevation
+    typing just m- for margin and p- for padding
+    m0+p0 for mking both zero in single code */
+    margin:1000;
+    padding:1000;
+}

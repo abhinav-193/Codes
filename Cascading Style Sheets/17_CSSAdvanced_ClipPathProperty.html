@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Clip Path Property</title>
+    <!-- This is property is applied to change the shape of the image with the help of  code from google -->
+    <style>
+        body{
+            text-align: center;
+            background: rgb(114, 111, 111);
+        }
+        .clip_circle{
+            /* clip-path: circle(50% at 50% 50%); */
+            -webkit-clip-path: circle(50% at 50% 50%);
+clip-path: circle(50% at 50% 50%);
+            width:900px;
+            height:900px;
+        }
+    </style>
+</head>
+<body>
+    <img src="square.jpg" alt="" class="clip_circle">
+</body>
+</html>

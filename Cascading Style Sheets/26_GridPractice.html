@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .container1{
+            display: flex;
+            flex-direction: row;
+            gap:10px;
+        }
+        .img1{
+            display:grid;
+            grid-template-columns: 300px;
+            grid-template-rows: 300px 300px;
+            gap:10px;
+
+        }
+        .c1r1{
+            height: 100%;
+            width:100%;
+            object-fit: fill;
+            border-radius: 100px;
+        }
+        .c1r2{
+            height:100%;
+            width:100%;
+            object-fit: fill;
+            border-radius: 100px;
+        }
+        .c2{
+            width:300px;
+            height:610px;border-radius: 100px;
+        }
+        .img3{
+            display:grid;
+            grid-template-columns: 670px;
+            grid-template-rows: 300px 300px;
+            gap:3px;
+
+        }
+        .c3r1{
+            height:100%;
+            width:100%;
+            object-fit: fill;border-radius: 100px;
+        }
+        .c3r2{
+            height:100%;
+            width:100%;
+            object-fit: fill;border-radius: 100px;
+        }
+        h1{
+            font-size: 100px;
+        text-shadow: 200px;
+        text-align: center;
+        font-family: 'Twinkle Star', cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="img1">
+            <img src="img_prac/swag.jpg" alt="" class="c1r1">
+            <img src="img_prac/back.jpg" alt="" class="c1r2">
+        </div>
+        <div class="img2">
+            <img src="img_prac/fan.jpg" alt="" class="c2">
+        </div>
+        <div class="img3">
+            <img src="img_prac/pdhai.jpg" alt="" class="c3r1">
+            <img src="img_prac/beauty.png" alt="" class="c3r2">
+        </div>
+    </div>
+    <h1>This Is Hitanshi Singh-The Beauty Queen!!</h1>
+    
+</body>
+</html>
