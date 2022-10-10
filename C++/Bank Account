@@ -1,0 +1,79 @@
+//Write a C++ implemnetation for a class BankAccount that contains the following members:
+// Data Members
+// b) Name of the depositor
+// b) Account number c) Type of account
+// c) d) Balance amount in the account
+// Member Functions
+// a) Assign an initial value to the account balance.
+// b) Deposit an amount to the account balance.
+// c) Withdraw an amount after checking the balance.
+// d) Display the account holder's name and remaining balance.
+// Write a main program to test the program.
+
+#include<iostream>
+#include<stdio.h>
+#include<string.h>
+
+using namespace std;
+class Bank
+{
+        int account;
+        char name1[50], acctype[50];
+        float Bal;  
+   public:
+        Bank(int acc_no, char *name, char *acc_type, float balance)
+        {
+                account=acc_no;
+                strcpy(name1, name);
+                strcpy(acctype, acc_type);
+                Bal=balance;
+        }
+        void depositdata();
+        void withdrawdata();
+        void display();
+};
+void Bank::depositdata()   
+{
+        int D_amount;
+        cout<<"Enter then amount to be deposited: ";
+        cin>>D_amount;
+        Bal+=D_amount;
+        cout<<"Account balance is: "<<Bal;
+}
+void Bank::withdrawdata()  
+{
+        int W_amount;
+        cout<<endl<<endl<<"Enter the amount to be withdrawn: ";
+        cin>>W_amount;
+        if(W_amount>Bal)
+                cout<<"Cannot withdraw the requested amount"<<endl;
+        Bal-=W_amount;
+}
+void Bank::display() 
+{
+        cout<<endl<<"Details of "<<name1<<"'s account is shown below:"<<endl;
+        cout<<"Account No. is: "<<account<<endl;
+        cout<<"Name is: "<<name1<<endl;
+        cout<<"Account Type is: "<<acctype<<endl;
+        cout<<"Remaining Balance is: "<<Bal<<endl;  
+}
+int main()
+{
+        int acc_no;
+        char name[50], acc_type[50];
+        float balance;
+        cout<<"Enter your Details: "<<endl;
+        cout<<"Account No.: ";
+        cin>>acc_no;
+        cout<<"Name: ";
+        cin>>name;
+        cout<<"Account Type: ";
+        cin>>acc_type;
+        cout<<"Balance: ";
+        cin>>balance;
+        Bank Acc1(acc_no, name, acc_type, balance); 
+        Acc1.depositdata(); 
+        Acc1.withdrawdata(); 
+        Acc1.display(); 
+        return 0;
+}
