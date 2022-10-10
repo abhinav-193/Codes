@@ -1,0 +1,80 @@
+// A book shop maintains the inventory of books that are being sold at the
+// workshop. The list includes details such as author, title, price, publisher and stock
+// position. Whenever a customer wants a book, the sales person inputs the title and
+// author and the system searches the list and displays whether it is available or not. If it
+// is not, an appropriate message is displayed. If it is, then the system displays the book
+// details and requests for the number of copies required. If the requested copies are
+// available, the total cost of their quested copies is displayed otherwise the message
+// “Required copies not in stock” is displayed. WAP using a class called Books with
+// suitable member functions and constructors.
+
+#include <iostream>
+using namespace std;
+class Books{
+        string title;
+        string author;
+        string publisher;
+        float price;
+        int stock;
+    public:
+        Books(string d1,string d2,string d3,float d4,int d5){
+            title=d1;
+            author=d2;
+            publisher=d3;
+            price=d4;
+            stock=d5;
+        }
+        int searchdata(string d1);
+        void purchasedata();
+};
+int Books::searchdata(string d1){
+    if(d1==title){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+void Books::purchasedata(){
+    int p;
+    if (stock>0){
+        cout<<endl<<"Details: ";
+        cout<<endl<<"Book Name\t\t\tAuthor\t\t\tPublisher\t\t\tPrice(Per Unit)\t\t\tTotal Stocks"<<endl;
+        cout<<"======================================================================================================"<<endl;
+        cout<<title<<"\t\t"<<author<<"\t\t"<<publisher<<"\t\t\t"<<price<<"\t\t\t\t"<<stock<<endl;
+        cout<<endl<<"Enter buying quantity: ";
+        cin>>p;
+        if((stock-p)>=0){
+            stock=stock-p;
+            cout<<endl<<"Total Price: "<<(price*p)<<endl;
+        }
+        else{
+            cout<<endl<<"Required copies are not in stock.";
+        }
+    }
+    else{
+        cout<<endl<<"Empty stock.";
+    }
+}
+int main(){
+    Books b1[3]={Books("Fundamentals of Data Structures in C","Ellis Horowitz","Computer Science Press",475.00,20),
+                Books("Object Oriented Programming","E Balaguruswamy","McGraw-Hill",454.00,20),
+                Books("Discrete Mathematics and Its Applications","Kenneth Rosen","McGraw-Hill",740.00,20)};
+    int i, p;
+            string s1;
+            int q;
+            int count=0;
+            cout<<endl<<"Enter the name of the book: ";
+            getline(cin,s1);
+            for(i=0;i<3;i++){
+                q=b1[i].searchdata(s1);
+                if(q==1){
+                    count+=1;
+                    b1[i].purchasedata();
+                }                
+            }
+            if(count==0){
+                cout<<endl<<"Book not found. ";              
+            }       
+    return 0;  
+}
